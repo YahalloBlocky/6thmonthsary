@@ -56,7 +56,7 @@ function openEnvelope() {
 // Place your mp3 files in a "songs/" folder
 // and update the src paths below.
 const songs = [
-  { src: 'mm.MP3', title: 'Magkabilang Mundo Piano', artist: 'Jireh Lim' },
+  { src: 'mm.mp3', title: 'Magkabilang Mundo Piano', artist: 'Jireh Lim' },
   // add more songs here:
   // { src: 'songs/another.mp3', title: 'Another Song', artist: 'Artist' },
 ];
