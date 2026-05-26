@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Love 🍓 · 6 Months</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Pinyon+Script&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style6.css" />
+</head>
+
+<body class="index-page">
+
+  <div class="bg-wash"></div>
+
+  <!-- background strawberries -->
+  <div class="bg-berries">
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+  </div>
+
+  <!-- falling petals (spawned by JS) -->
+  <div class="petals-wrap" id="petals"></div>
+
+  <!-- center stage -->
+  <div class="stage" id="stage">
+    <p class="label-top">Mea amata</p>
+    <p class="label-months">happy sixth monthsary </p>
+
+    <!-- envelope -->
+    <div class="envelope-wrap" id="envWrap" onclick="openEnvelope()">
+      <div class="envelope">
+        <div class="env-body"></div>
+        <div class="env-letter">
+          <span class="env-letter-preview">:> ♡</span>
+        </div>
+        <div class="env-flap" id="envFlap"></div>
+        <div class="env-seal" id="envSeal">🍓</div>
+      </div>
+    </div>
+
+    <button class="open-btn" onclick="openEnvelope()">Open letter ♡</button>
+  </div>
+
+  <!-- page transition overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <script src="main6.js"></script>
+</body>
+
+</html>

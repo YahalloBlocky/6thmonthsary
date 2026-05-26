@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Letter to You 🍓</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Pinyon+Script&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style6.css" />
+</head>
+
+<body class="letter-page">
+
+  <!-- background -->
+  <div class="bg-wash"></div>
+
+  <!-- background strawberries -->
+  <div class="bg-berries">
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+    <div class="bg-sb">🍓</div>
+  </div>
+
+  <!-- falling petals -->
+  <div class="petals-wrap" id="petals"></div>
+
+  <!-- music player -->
+  <div id="music-player">
+    <span class="player-note">🎵</span>
+    <div class="player-text">
+      <span id="song-title">song title</span>
+      <span id="song-artist">artist</span>
+    </div>
+    <div class="player-controls">
+      <button class="ctrl-btn" onclick="prevSong()">⏮</button>
+      <button class="ctrl-btn play" id="play-btn" onclick="togglePlay()">⏸</button>
+      <button class="ctrl-btn" onclick="nextSong()">⏭</button>
+    </div>
+    <div class="player-progress">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress-bar" value="0" min="0" max="100" oninput="seek(this.value)" />
+      <span id="duration">0:00</span>
+    </div>
+  </div>
+
+  <!-- letter -->
+  <div class="page">
+    <div class="letter-wrapper">
+      <div class="paper">
+
+        <!-- strawberry corner accents -->
+        <span class="sb-corner tl">🍓</span>
+        <span class="sb-corner tr">🍓</span>
+        <span class="sb-corner bl">🍓</span>
+        <span class="sb-corner br">🍓</span>
+
+        <!--
+          Corner photos — replace the photo-ph divs with your images:
+          <img src="your-photo.jpg" alt="us">
+        -->
+        <div class="corner-photo top-left">
+          <img src="love1 (1).jpeg" alt="my bestfriend">
+        </div>
+        <div class="corner-photo top-right">
+          <img src="love1 (2).jpeg" alt="my wife">
+        </div>
+        <div class="corner-photo bottom-left">
+          <img src="love1 (5).jpeg" alt="my crush">
+        </div>
+        <div class="corner-photo bottom-right">
+          <img src="love1 (4).jpeg" alt="my everything">
+        </div>
+
+        <div class="paper-header">
+          <span class="paper-deco">🍓 ♡ 🍓</span>
+          <h1 class="paper-title">My everything,</h1>
+          <div class="paper-line"></div>
+        </div>
+
+        <div class="letter-body">
+          <p class="placeholder-text">
+            ✦ My dear Kristine, ✦<br><br>
+            Happy 6th Monthsary to us my love. Once again thank you for making me the happiest little boy in the whole
+            world, and I'm very grateful that we're able to get this far, staying and loving one another. It is so nice
+            and heartwarming
+            to know
+            that despite
+            everything we still chose to be with each other.<br><br>
+
+            Honestly, it makes me sad knowing you'll have to leave and i won't be able to see you and feel your touch
+            for a long time. But at the same time, it makes me feel relieved
+            knowing you'll finally be safer and free. So please once you get to palawan remember this things.
+            Always take care of yourself, eat enough food, drink enough water, and enjoy life. Try to stay happy as much
+            as you can because knowing
+            you're sad makes me feel sad too. If you ever feel down and need someone to listen to your rant, just know
+            that i'm here to
+            always listen to you. Don't mind what other people say about you, because they don't know how amazing of a
+            person you are. You are the most kind, gentle, caring,
+            and loveable
+            girl i know. I've said this things
+            before but just let me remind you. You are the only girl i wish to love, to take care of, and to grow with.
+            And ever since i met you
+            You are still what i consider to be the best thing that has happened to me. My love, my wife, my girlfriend,
+            my bestfriend, and most of all my everything.<br><br>
+
+            I love you, and whatever happens it will always be you.♡
+          </p>
+        </div>
+
+        <div class="sb-divider">🍓 · 🍓 · 🍓</div>
+
+        <div class="paper-footer">
+          <div class="paper-line"></div>
+          <p class="sign-off">forever yours,</p>
+          <p class="signature">
+            <!-- change this to your name -->
+            Mj 🍓
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="main6.js"></script>
+</body>
+
+</html>
